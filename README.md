@@ -31,8 +31,10 @@ Optional icon:
 
 cmd
 pyinstaller --onefile --console --name DOW --icon=dow.ico main.py
-Commands
-Command	Aliases	Description
+```
+
+## Commands
+### Command	Aliases	Description
 DIR [path] [/W]	—	List files and directories
 CD [path]	CHDIR	Show or change directory
 MD <path>	MKDIR	Create a directory
@@ -69,8 +71,8 @@ dos_sys.py     platform helpers
 DOW-logo.svg   logo
 Note: sys.py is named dos_sys.py to avoid clashing with Python's standard sys module. This is required for a working PyInstaller build.
 
-Example
-text
+### Example
+```
 C:\> MD PLAY
 C:\> CD PLAY
 C:\PLAY> ECHO hello > note.txt
@@ -91,7 +93,9 @@ C:\PLAY> CD ..
 C:\> EXIT
 
 DOW terminated.
-Notes
+```
+
+## Notes
 DOW emulates the DOS shell, not 16-bit DOS binaries.
 
 All file operations use the host filesystem via Python's os and shutil.
